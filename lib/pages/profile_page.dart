@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../constants.dart';
+import '../core/constants.dart';
 import '../date/model/user.dart';
 import '../route/app_rpute.dart';
 import '../widgets/custom_text.dart';

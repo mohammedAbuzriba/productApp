@@ -1,15 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:moaz_app/route/app_rpute.dart';
-import 'package:moaz_app/widgets/custom_button.dart';
-import 'package:moaz_app/widgets/custom_text.dart';
 import 'package:moaz_app/widgets/product_list.dart';
-
-import '../../constants.dart';
+import '../../core/constants.dart';
 import '../../date/model/user.dart';
 import '../../widgets/number.dart';
 import 'cubit/home_cubit.dart';
-import 'package:bloc/bloc.dart';
 
 class HomePage extends StatefulWidget {
   final User? user;

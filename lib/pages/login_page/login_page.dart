@@ -4,7 +4,7 @@ import 'package:moaz_app/date/model/user.dart';
 import 'package:moaz_app/pages/login_page/cubit/login_cubit.dart';
 import 'package:moaz_app/route/app_rpute.dart';
 
-import '../../constants.dart';
+import '../../core/constants.dart';
 
 class LoginPage extends StatefulWidget {
   LoginPage({super.key});

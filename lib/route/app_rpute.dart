@@ -5,14 +5,21 @@ import 'package:moaz_app/pages/login_page/login_page.dart';
 import 'package:moaz_app/pages/profile_page.dart';
 import 'package:moaz_app/pages/register_page/register_page.dart';
 
+import '../pages/bmi_page/bmi_page.dart';
+
 class AppRoute {
   static const String homePage = '/';
   static const String loginPage = 'loginPage';
   static const String registerPage = 'registerPage';
   static const String profilePage = 'profilePage';
+  static const String bmi = 'bmi';
   static Route<dynamic> ongenratedRoute(RouteSettings routeSettings) {
     var user = routeSettings.arguments as User?;
     switch (routeSettings.name) {
+      case bmi:
+        return MaterialPageRoute(
+          builder: (context) => Bmi(),
+        );
       case loginPage:
         return MaterialPageRoute(
           builder: (context) => LoginPage(),
