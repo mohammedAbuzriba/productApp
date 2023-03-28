@@ -14,7 +14,7 @@ class _AppState extends State<App> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Day Two',
-      initialRoute: AppRoute.bmi,
+      initialRoute: AppRoute.loginPage,
       onGenerateRoute: AppRoute.ongenratedRoute,
     );
   }

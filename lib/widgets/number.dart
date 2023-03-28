@@ -145,6 +145,7 @@ class ButtonGetDataFromApi extends StatelessWidget {
   const ButtonGetDataFromApi({super.key});
   @override
   Widget build(BuildContext context) {
+    print('---------3------------');
     return BlocBuilder<HomeCubit, HomeState>(
       builder: (context, state) {
         return Padding(
@@ -152,7 +153,8 @@ class ButtonGetDataFromApi extends StatelessWidget {
           child: CustomButton(
             textButton: 'Click to Get Data From Api !',
             onTap: () {
-              context.read<HomeCubit>().getProducts();
+              print('---------4------------');
+              context.read<HomeCubit>().getUserApi();
             },
           ),
         );

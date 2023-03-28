@@ -7,7 +7,7 @@ class HomeState extends Equatable {
   final String? num2;
   final String? num3;
   final Status status;
-  final Resource<Store>? resorce;
+  final Resource<UserApi>? resorce;
 
   const HomeState(
       {this.num1,
@@ -20,7 +20,7 @@ class HomeState extends Equatable {
       {String? num1,
       String? num2,
       String? num3,
-      Resource<Store>? resorce,
+      Resource<UserApi>? resorce,
       Status status = Status.init}) {
     return HomeState(
         num1: num1 ?? this.num1,

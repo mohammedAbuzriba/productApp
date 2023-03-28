@@ -7,21 +7,18 @@ import '../date/model/userapi.dart';
 import '../pages/home_page/cubit/home_cubit.dart';
 import 'product_item.dart';
 
-class ListProduct extends StatelessWidget {
-  ListProduct({super.key});
+class ListUserApi extends StatelessWidget {
+  ListUserApi({super.key});
   UserApi? userApi;
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<HomeCubit, HomeState>(
       builder: (context, state) {
         if (state.status == Status.loading) {
-          print('---------5------------');
-
           return RefreshProgressIndicator();
         }
 
-        if (state.resorce is Success<UserApi>) {
-          print(state.status.toString());
+        if (state.resorce is Success<Store>) {
           userApi = (state.resorce as Success<UserApi>).date;
           return Expanded(
             child: ListView.builder(
